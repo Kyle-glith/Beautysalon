@@ -228,7 +228,7 @@ const Index = () => {
   return (
     <Layout>
      {/* Hero Section */}
-     <section className="min-h-screen bg-[url('/src/assets/bg1.jpg')] bg-cover bg-center flex items-center justify-center relative">
+     <section className="min-h-screen bg-[url('/assets/bg1.jpg')] bg-cover bg-center flex items-center justify-center relative">
      {/* Overlay */}
      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
