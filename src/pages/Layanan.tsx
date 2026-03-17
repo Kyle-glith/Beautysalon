@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 const Layanan = () => {
   const WHATSAPP_NUMBER = "6287866242877";
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Halo Beauty Salon, saya ingin booking treatment. Bisa info jadwal?",
+    "Hello Beauty Salon, I'd like to book a treatment. Could you let me know the available schedule?",
   )}`;
 
   const services = useMemo(
@@ -14,9 +14,9 @@ const Layanan = () => {
         image:
           "/assets/Hair.jpg",
         category: "Hair Care",
-        subtitle: "Rambut sehat, rapi, dan wangi sepanjang hari.",
+        subtitle: "Healthy, neat, and fragrant hair all day long.",
         items: [
-          { name: "Potong Rambut", price: "Rp.50.000" },
+          { name: "Hair Cut", price: "Rp.50.000" },
           { name: "Hair Spa", price: "Rp.150.000" },
           { name: "Smoothing", price: "Rp.500.000" },
           { name: "Coloring", price: "Rp.300.000" },
@@ -26,7 +26,7 @@ const Layanan = () => {
         image:
           "/assets/Facial.jpg",
         category: "Facial Treatment",
-        subtitle: "Kulit lebih cerah, bersih, dan glowing.",
+        subtitle: "Brighter, cleaner, and glowing skin.",
         items: [
           { name: "Basic Facial", price: "Rp.100.000" },
           { name: "Acne Treatment", price: "Rp.200.000" },
@@ -38,7 +38,7 @@ const Layanan = () => {
         image:
           "/assets/Nail1.jpg",
         category: "Nail Care",
-        subtitle: "Kuku rapi, bersih, dan desain sesuai request kamu.",
+        subtitle: "Neat, clean nails with custom designs just for you.",
         items: [
           { name: "Manicure", price: "Rp.75.000" },
           { name: "Pedicure", price: "Rp.85.000" },
@@ -50,19 +50,19 @@ const Layanan = () => {
         image:
           "/assets/Bulumata.jpg",
         category: "Eyelashes",
-        subtitle: "Bulu mata terlihat lebih lentik dan tegas.",
+        subtitle: "Curvy and sharp eyelashes for a bold look.",
         items: [
-          { name: "Lash Extension Classic", price: "Rp.250.000" },
-          { name: "Lash Extension Volume", price: "Rp.350.000" },
+          { name: "Classic Lash Extension", price: "Rp.250.000" },
+          { name: "Volume Lash Extension", price: "Rp.350.000" },
           { name: "Lash Lift", price: "Rp.200.000" },
-          { name: "Refill Lash", price: "Rp.150.000" },
+          { name: "Lash Refill", price: "Rp.150.000" },
         ],
       },
       {
         image:
           "/assets/Halis1.jpg",
         category: "Eyebrow",
-        subtitle: "Bentuk alis lebih tegas, simetris, dan natural.",
+        subtitle: "Sharp, symmetrical, and natural eyebrow shapes.",
         items: [
           { name: "Brow Shaping", price: "Rp.75.000" },
           { name: "Brow Tint", price: "Rp.120.000" },
@@ -74,18 +74,18 @@ const Layanan = () => {
         image:
           "/assets/Pijat.jpg",
         category: "Spa",
-        subtitle: "Pijatan yang memukau.",
+        subtitle: "Amazing and relaxing massages.",
         items: [
-          { name: "legs massages", price: "Rp.175.000" },
-          { name: "Hands massages", price: "Rp.175.000" },
-          { name: "Full Body massages", price: "Rp.350.000" },
-          { name: "Balinese masages", price: "Rp.200.000" },
+          { name: "Leg Massage", price: "Rp.175.000" },
+          { name: "Hand Massage", price: "Rp.175.000" },
+          { name: "Full Body Massage", price: "Rp.350.000" },
+          { name: "Balinese Massage", price: "Rp.200.000" },
         ],
       },
       {
         image: "/assets/Makeup2.jpg",
         category: "Makeup",
-        subtitle: "Perubahan wajah yang sempurna",
+        subtitle: "Perfect facial transformations for any event.",
         items: [
           { name: "Natural Daily Makeup", price: "Rp.150.000" },
           { name: "Party / Event Makeup", price: "Rp.250.000" },
@@ -110,10 +110,10 @@ const Layanan = () => {
               <Sparkles size={16} /> Pricelist & Treatment
             </p>
             <h1 className="font-display text-5xl font-bold mt-4 text-sage-600">
-              Layanan Kami
+              Our Services
             </h1>
             <p className="font-body text-sage-600 mt-5 max-w-2xl mx-auto">
-              Berbagai layanan kecantikan profesional untuk memenuhi kebutuhan Anda.
+              A wide range of professional beauty services to meet your needs.
             </p>
 
             {/* <div className="mt-8">
@@ -138,9 +138,9 @@ const Layanan = () => {
                 <div className="lg:sticky lg:top-28">
                   <div className="rounded-2xl border border-yuma-50 bg-yuma-300 backdrop-blur-sm shadow-sm p-6">
                     <div className="flex items-center justify-between gap-3 mb-5">
-                      <h2 className="font-display text-2xl font-semibold text-sage-600">Kategori</h2>
+                      <h2 className="font-display text-2xl font-semibold text-sage-600">Categories</h2>
                       <span className="text-xs font-body px-3 py-1 rounded-full bg-white/20 text-white">
-                        {services.length} pilihan
+                        {services.length} choices
                       </span>
                     </div>
 
@@ -195,7 +195,7 @@ const Layanan = () => {
                         rel="noreferrer"
                         className="w-full inline-flex items-center justify-center gap-2 bg-sage-600 text-white px-6 py-3 rounded-lg font-body uppercase tracking-wider hover:bg-sage-500 transition-colors"
                       >
-                        Booking via WhatsApp <ArrowRight size={18} />
+                        Book via WhatsApp <ArrowRight size={18} />
                       </a>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ const Layanan = () => {
                           <p className="font-body text-white mt-2">{active?.subtitle}</p>
                         </div>
                         <span className="text-xs font-body px-3 py-1 rounded-full bg-white/15 text-white whitespace-nowrap">
-                          {active?.items.length} treatment
+                          {active?.items.length} treatments
                         </span>
                       </div>
                     </div>
@@ -245,7 +245,7 @@ const Layanan = () => {
 
                     <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
                       <div className="font-body text-sm text-muted-foreground">
-                        Mau konsultasi dulu? Chat kami, nanti dibantu pilih treatment yang cocok.
+                        Need a consultation? Chat with us, and we&#39;ll help you choose the right treatment.
                       </div>
                       <a
                         href={waLink}
@@ -253,7 +253,7 @@ const Layanan = () => {
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 border border-sage-600 text-sage-600 px-6 py-3 rounded-lg font-body uppercase tracking-wider hover:bg-sage-600 hover:text-white transition-colors"
                       >
-                        Tanya & booking <ArrowRight size={18} />
+                        Ask & Book <ArrowRight size={18} />
                       </a>
                     </div>
                   </div>
@@ -262,8 +262,8 @@ const Layanan = () => {
                 {/* Mini grid to explore more */}
                 <div className="mt-10">
                   <div className="flex items-center justify-between gap-4 mb-4">
-                    <h4 className="font-display text-2xl font-semibold text-sage-600">Explore kategori lain</h4>
-                    <span className="font-body text-xs text-gray-400">Klik untuk ganti kategori</span>
+                    <h4 className="font-display text-2xl font-semibold text-sage-600">Explore other categories</h4>
+                    <span className="font-body text-xs text-gray-400">Click to change category</span>
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {services
@@ -286,7 +286,7 @@ const Layanan = () => {
                           </div>
                           <div className="p-3">
                             <div className="font-body text-sm font-semibold text-sage-600">{s.category}</div>
-                            <div className="font-body text-xs text-sage-600 mt-1">{s.items.length} treatment</div>
+                            <div className="font-body text-xs text-sage-600 mt-1">{s.items.length} treatments</div>
                           </div>
                         </button>
                       ))}

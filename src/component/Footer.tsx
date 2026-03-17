@@ -8,21 +8,21 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="flex flex-col items-center md:items-start">
                         <h3 className="font-display text-2xl font-semibold mb-4 text-yuma-500">BeautySalon</h3>
-                        <p className="font-body text-sm opacity-80 leading-relaxed text-center md:text-left text-yuma-50">Temukan Keindahan sejati Anda bersama kami.</p>
+                        <p className="font-body text-sm opacity-80 leading-relaxed text-center md:text-left text-yuma-50">Discover your true beauty with us.</p>
                     </div>
 
                     <div>
-                        <h4 className="font-display text-lg font-semibold mb-4 text-yuma-500">Navigasi</h4>
+                        <h4 className="font-display text-lg font-semibold mb-4 text-yuma-500">Navigation</h4>
                         <div className="flex flex-col gap-2">
-                            <Link to="/" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Beranda</Link>
-                            <Link to="/layanan" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Layanan</Link>
-                            <Link to="/tentang" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Tentang Kami</Link>
-                            <Link to="/kontak" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Kontak</Link>
+                            <Link to="/" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Home</Link>
+                            <Link to="/layanan" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Services</Link>
+                            <Link to="/tentang" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">About Us</Link>
+                            <Link to="/kontak" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity text-yuma-50 hover:text-yuma-600">Contact</Link>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="font-display text-lg font-semibold mb-4 text-yuma-500">Hubungi Kami</h4>
+                        <h4 className="font-display text-lg font-semibold mb-4 text-yuma-500">Contact Us</h4>
                         <div className="flex flex-col gap-3 text-yuma-50">
                             <div className="flex items-center gap-3">
                                 <Phone size={16} />
@@ -30,7 +30,7 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center gap-3">
                                 <MapPin size={16} />
-                                <span className="font-body text-sm opacity-80">Jl. Contoh, Kota Contoh</span>
+                                <span className="font-body text-sm opacity-80">Jl. Example, Example City</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail size={16} />
@@ -40,14 +40,14 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h4 className="font-display text-lg font-semibold mb-4 text-yuma-500">Jam Buka</h4>
+                        <h4 className="font-display text-lg font-semibold mb-4 text-yuma-500">Opening Hours</h4>
                         <div className="flex flex-col gap-2 text-yuma-50">
                             <div className="flex items-start gap-2">
                                 <Clock size={16} className="mt-0.5 flex-shrink-0" />
                                 <div className="flex flex-col gap-1">
-                                    <span className="font-body text-sm opacity-80">Senin - Jumat: 09:00 - 17:00</span>
-                                    <span className="font-body text-sm opacity-80">Sabtu: 09:00 - 14:00</span>
-                                    <span className="font-body text-sm opacity-80">Minggu: Tutup</span>
+                                    <span className="font-body text-sm opacity-80">Monday - Friday: 09:00 - 17:00</span>
+                                    <span className="font-body text-sm opacity-80">Saturday: 09:00 - 14:00</span>
+                                    <span className="font-body text-sm opacity-80">Sunday: Closed</span>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-8 pt-8">
-                    <h4 className="font-display text-lg font-semibold mb-4 text-center text-yuma-400">Ikuti Kami</h4>
+                    <h4 className="font-display text-lg font-semibold mb-4 text-center text-yuma-400">Follow Us</h4>
                     <div className="flex justify-center gap-6">
                         {[
                             { icon: Instagram, label: "Instagram", color: "hover:text-violet-400" },
@@ -69,7 +69,7 @@ const Footer = () => {
                                 </div>
                                 {/* Tooltip */}
                                 <div className="absolute -top-9 left-1/2 -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-                                    Segera Hadir
+                                    Coming Soon
                                 </div>
                             </div>
                         ))}

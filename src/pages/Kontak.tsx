@@ -8,13 +8,13 @@ const Kontak = () => {
       <header className="pt-32 pb-16 px-6 bg-yuma-200 border-b">
         <div className="container mx-auto text-center">
           <p className="inline-flex items-center justify-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-600">
-            <Sparkles size={16} /> Hubungi Kami
+            <Sparkles size={16} /> Get In Touch
           </p>
           <h1 className="font-display text-5xl font-bold mt-4 text-sage-600">
-            Kontak
+            Contact
           </h1>
           <p className="font-body text-sage-600 mt-5 max-w-2xl mx-auto">
-            Kami siap melayani Anda dengan sepenuh hati
+            We are ready to serve you with all our heart
           </p>
         </div>
       </header>
@@ -25,7 +25,7 @@ const Kontak = () => {
             
             {/* Contact Info */}
             <div className="space-y-8 bg-yuma-300 p-8 rounded-lg">
-              <h2 className="font-display text-3xl font-semibold mb-6 text-sage-600">Informasi Kontak</h2>
+              <h2 className="font-display text-3xl font-semibold mb-6 text-sage-600">Contact Information</h2>
               
               <div className="space-y-6 ">
                 <div className="flex items-start gap-4">
@@ -33,7 +33,7 @@ const Kontak = () => {
                     <Phone className="text-sage-600" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-body font-semibold mb-1 text-sage-600">Telepon</h3>
+                    <h3 className="font-body font-semibold mb-1 text-sage-600">Phone</h3>
                     <p className="font-body text-sage-400">+62 123-456-7890</p>
                   </div>
                 </div>
@@ -53,7 +53,7 @@ const Kontak = () => {
                     <MapPin className="text-sage-600" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-body font-semibold mb-1 text-sage-600">Alamat</h3>
+                    <h3 className="font-body font-semibold mb-1 text-sage-600">Address</h3>
                     <p className="font-body text-sage-400">
                       Jl. Kayu Aya No. 123<br />
                       Seminyak, Kuta, Bali 80361
@@ -66,10 +66,10 @@ const Kontak = () => {
                     <Clock className="text-sage-600" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-body font-semibold mb-1 text-sage-600">Jam Operasional</h3>
+                    <h3 className="font-body font-semibold mb-1 text-sage-600">Operational Hours</h3>
                     <p className="font-body text-sage-400">
-                      Senin - Jumat: 09.00 - 20.00<br />
-                      Sabtu - Minggu: 10.00 - 18.00
+                      Monday - Friday: 09.00 - 20.00<br />
+                      Saturday - Sunday: 10.00 - 18.00
                     </p>
                   </div>
                 </div>
@@ -78,14 +78,14 @@ const Kontak = () => {
 
             {/* Contact Form */}
             <div className="bg-yuma-300 p-8 rounded-lg">
-              <h2 className="font-display text-3xl font-semibold mb-6 text-sage-600">Kirim Pesan</h2>
+              <h2 className="font-display text-3xl font-semibold mb-6 text-sage-600">Send a Message</h2>
               <form className="space-y-4">
                 <div>
-                  <label className="font-body text-sm font-medium mb-2 block text-sage-700">Nama</label>
+                  <label className="font-body text-sm font-medium mb-2 block text-sage-700">Name</label>
                   <input 
                     type="text" 
                     className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="Nama Anda"
+                    placeholder="Your Name"
                   />
                 </div>
                 <div>
@@ -97,18 +97,17 @@ const Kontak = () => {
                   />
                 </div>
                 <div>
-                  <label className="font-body text-sm font-medium mb-2 block text-sage-700">Pesan</label>
+                  <label className="font-body text-sm font-medium mb-2 block text-sage-700">Message</label>
                   <textarea 
-                    rows={5}
-                    className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="Tulis pesan Anda..."
-                  />
+                    className="w-full px-4 py-2 rounded-lg border border-border bg-background h-32 focus:outline-none focus:ring-2 focus:ring-accent"
+                    placeholder="How can we help you?"
+                  ></textarea>
                 </div>
                 <button 
-                  type="submit"
-                  className="w-full bg-sage-600 text-white px-6 py-3 rounded-lg font-body uppercase tracking-wider hover:bg-sage-500 transition-colors"
+                  type="button"
+                  className="w-full py-3 bg-sage-600 text-white font-body uppercase tracking-wider rounded-lg hover:bg-sage-700 transition-colors"
                 >
-                  Kirim Pesan
+                  Send Message
                 </button>
               </form>
             </div>

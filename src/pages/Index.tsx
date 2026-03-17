@@ -8,7 +8,7 @@ const Index = () => {
   // Contoh user: 0878... -> 62878...
   const WHATSAPP_NUMBER = "6287866242877";
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Halo BeautySalon, saya ingin booking. Bisa info jadwal yang tersedia?",
+    "Hello BeautySalon, I'd like to book an appointment. Could you let me know the available schedule?",
   )}`;
 
   const servicesTrackRef = useRef<HTMLDivElement | null>(null);
@@ -52,37 +52,37 @@ const Index = () => {
   const services = [
     {
       title: "Hair Styling",
-      desc: "Potong, styling, dan perawatan rambut profesional.",
+      desc: "Professional hair cutting, styling, and treatments.",
       image:
         "/assets/Rambut.jpg",
     },
     {
       title: "Eyelash Extension",
-      desc: "Eyelash Extension membuat bulu mata terlihat lebih natural.",
+      desc: "Eyelash extensions for a more natural look.",
       image:
         "/assets/Eyelasesh.jpg",
     },
     {
       title: "Nail Art",
-      desc: "Manicure dan pedicure dengan desain cantik.",
+      desc: "Manicure and pedicure with beautiful designs.",
       image:
         "/assets/Nail.jpg",
     },
     {
-      title: "Eyebrown",
-      desc: "Eyebrown terlihat lebih natural.",
+      title: "Eyebrow Styling",
+      desc: "Naturally shaped and defined eyebrows.",
       image:
         "/assets/Eyebrown.jpg",
     },
     {
-      title: "Makeup",
-      desc: "Makeup terlihat lebih natural.",
+      title: "Professional Makeup",
+      desc: "Natural and flawless makeup for any occasion.",
       image:
         "/assets/Makeup.jpg",
     },
     {
-      title: "Spa",
-      desc: "Rasakan relaxation yang sangat nyaman.",
+      title: "Premium Spa",
+      desc: "Experience ultimate relaxation and comfort.",
       image:
         "/assets/Spa.jpg",
     },
@@ -94,36 +94,36 @@ const Index = () => {
       originalPrice: "Rp 200.000",
       price: "Rp 150.000",
       discount: "25% OFF",
-      desc: "Eyebrow lebih rapi and natural, cocok untuk tampilan sehari-hari.",
+      desc: "Neater and more natural eyebrows, perfect for daily look.",
       image: "/assets/Eyebrown2.jpg",
-      label: "Promo Minggu Ini",
+      label: "Weekly Promo",
     },
     {
       title: "Makeup",
       originalPrice: "Rp 350.000",
       price: "Rp 250.000",
       discount: "10% OFF",
-      desc: "Makeup flawless dan tahan lama untuk tampilan natural.",
+      desc: "Flawless and long-lasting makeup for a natural look.",
       image: "/assets/Makeup1.jpg",
-      label: "Terlaris",
+      label: "Best Seller",
     },
     {
       title: "Eyelash Extension",
       originalPrice: "Rp 300.000",
       price: "Rp 200.000",
       discount: "30% OFF",
-      desc: "Bulu mata lebih lentik dan natural tanpa extension tebal.",
+      desc: "Longer and more natural eyelashes without thick extensions.",
       image: "/assets/Eyelasesh1.jpg",
-      label: "Terbatas",
+      label: "Limited Offer",
     },
     {
       title: "Manicure & Pedicure",
       originalPrice: "Rp 280.000",
       price: "Rp 200.000",
       discount: "20% OFF",
-      desc: "Perawatan kuku lengkap untuk tampilan tangan dan kaki yang cantik.",
+      desc: "Complete nail care for beautiful hands and feet.",
       image: "/assets/Manicure.jpg",
-      label: "Hemat",
+      label: "Special Price",
     },
   ];
 
@@ -131,19 +131,19 @@ const Index = () => {
   {
     title: "Luxury Glam Package",
     price: "Rp 250.000",
-    desc: "Makeup flawless dan tahan lama untuk membuatmu tampil cantik dan percaya diri di setiap momen spesial.",
+    desc: "Flawless and long-lasting makeup to make you look beautiful and confident in every special moment.",
     badge: "Best Value",
   },
   {
     title: "Radiant Hair Transformation",
     price: "Rp 450.000",
-    desc: "Pewarnaan rambut stylish dengan potongan rapi dan styling yang membuat rambut terlihat lebih fresh dan berkilau.",
+    desc: "Stylish hair coloring with neat cutting and styling that makes hair look fresher and shinier.",
     badge: "Popular",
   },
   {
     title: "Perfect Eye Beauty Package",
     price: "Rp 300.000",
-    desc: "Lash lift dan brow styling untuk tampilan mata lebih tegas dan wajah terlihat lebih fresh.",
+    desc: "Lash lift and brow styling for a sharper eye look and fresher face.",
     badge: "New",
   },
 ];
@@ -153,43 +153,43 @@ const Index = () => {
       title: "Hair Styling & Color",
       before: "/assets/hairbefore.jpg",
       after: "/assets/hairafter.jpg",
-      description: "Transformasi warna rambut dengan teknik balayage profesional"
+      description: "Hair color transformation with professional balayage technique"
     },
     {
       title: "Facial Treatment",
       before: "/assets/facialbefore.jpg",
       after: "/assets/facialafter.jpg",
-      description: "Kulit lebih cerah dan glowing setelah facial treatment"
+      description: "Brighter and glowing skin after facial treatment"
     },
     {
       title: "Nail Art & Manicure",
       before: "/assets/nailbefore.jpg",
       after: "/assets/nailafter.jpg",
-      description: "Nail art cantik dengan desain custom"
+      description: "Beautiful nail art with custom design"
     },
     {
       title: "Eyelash Extension",
       before: "/assets/eyelasesbefore.jpg",
       after: "/assets/eyelasesafter.jpg",
-      description: "Bulu mata lebih lentik dan natural dengan extension"
+      description: "Longer and more natural eyelashes with extensions"
     },
     {
       title: "Makeup Transformation",
       before: "/assets/makeupbefore.jpg",
       after: "/assets/makeupafter.jpg",
-      description: "Makeup flawless untuk acara spesial"
+      description: "Flawless makeup for special events"
     },
     {
       title: "Eyebrow Styling",
       before: "/assets/eyebrownbefore.jpg",
       after: "/assets/eyebrownafter.jpg",
-      description: "Alis lebih rapi dan natural dengan teknik microblading"
+      description: "Neater and more natural eyebrows with microblading technique"
     },
     {
       title: "Spa & Relaxation",
       before: "/assets/spabefore.jpg",
       after: "/assets/spaafter.jpg",
-      description: "Relaksasi total dengan spa treatment premium"
+      description: "Total relaxation with premium spa treatment"
     },
   ];
 
@@ -198,69 +198,60 @@ const Index = () => {
   const testimonials = [
     {
       name: "Nadia A.",
-      role: "Hair & Spa",
-      quote:
-        "Rambutku jadi jauh lebih sehat dan rapi. Terapisnya ramah, tempatnya wangi, dan hasilnya sesuai banget!",
-      rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80",
+      role: "Regular Customer",
+      content: "The best salon experience! The staff is very professional and the results are always satisfying.",
+      stars: 5,
     },
     {
-      name: "Salsa P.",
-      role: "Facial Treatment",
-      quote:
-        "Facialnya bikin kulit glow tanpa iritasi. Konsultasinya detail dan produk yang dipakai terasa premium.",
-      rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80",
+      name: "Sarah W.",
+      role: "Bridal Client",
+      content: "I loved my wedding makeup. It was natural but made me look stunning. Highly recommend!",
+      stars: 5,
     },
     {
-      name: "Rani K.",
-      role: "Nail Art",
-      quote:
-        "Nail art-nya super rapi dan tahan lama. Banyak pilihan desain dan hasilnya persis seperti referensi.",
-      rating: 5,
-      image:
-        "./src/assets/Orang.jpg",
+      name: "Rina S.",
+      role: "Regular Customer",
+      content: "Their spa treatment is so relaxing. The atmosphere is perfect for a self-care day.",
+      stars: 5,
     },
   ];
 
   return (
     <Layout>
-     {/* Hero Section */}
-     <section className="min-h-screen bg-[url('/assets/bg1.jpg')] bg-cover bg-center flex items-center justify-center relative">
-     {/* Overlay */}
-     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+      {/* Hero Section */}
+      <section className="min-h-screen bg-[url('/assets/bg1.jpg')] bg-cover bg-center flex items-center justify-center relative">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
       {/* Content */}
       <div className="relative container mx-auto px-6 text-center pt-40">
         <h1 className="font-display text-6xl md:text-6xl font-bold mb-6 text-yuma-300 leading-tight">
-          "Website Salon - Siap Pakai"
+          Your Beauty, <br /> Our Masterpiece
         </h1>
 
         <p className="font-body text-lg md:text-lg text-yuma-300 max-w-3xl mx-auto mb-16">
-          Salon kecantikan premium yang menghadirkan pengalaman perawatan terbaik untuk Anda.
+          Experience premium beauty treatments that bring out your natural glow and elegance.
         </p>
 
         <a
           href={waLink}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center justify-center gap-2 border-2 border-yuma-700 text-yuma-700 px-5 py-3 rounded-lg font-body uppercase tracking-wider hover:bg-yuma-700 hover:text-white transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 bg-sage-600 text-white px-8 py-4 rounded-full font-body uppercase tracking-widest hover:bg-sage-500 transition-all transform hover:scale-105 shadow-xl"
         >
-          Booking Now <ArrowRight size={18} />
+          Book Your Appointment <ArrowRight size={20} />
         </a>
       </div>
-     </section>
+      </section>
 
-      {/* Services Preview */}
+      {/* Services Slider */}
       <section className="py-20 px-6 bg-yuma-200">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <p className="inline-flex items-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-700/80">
-              <Sparkles size={16} /> Highlight
+              <Sparkles size={16} /> Our Premium Services
             </p>
-            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Layanan Kami</h2>
+            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Tailored For You</h2>
           </div>
 
           <div className="relative -mx-6 px-6">
@@ -316,15 +307,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Promo */}
+      {/* Promotions */}
       <section className="py-20 px-6 bg-yuma-200 border-t border-b">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <p className="inline-flex items-center justify-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-700/80">
-              <Crown size={16} /> Penawaran Spesial
+              <Crown size={16} /> Limited Time Offers
             </p>
-            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Promo Terbaik Kami</h2>
-            <p className="font-body text-sage-600 mt-3">Dapatkan treatment premium dengan harga spesial, terbatas!</p>
+            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Special Promotions</h2>
+            <p className="font-body text-sage-600 mt-3">Get premium treatments at special prices, limited time only!</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
@@ -365,7 +356,7 @@ const Index = () => {
                       rel="noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-sage-500 text-white px-5 py-2 rounded-lg font-body uppercase tracking-wider hover:bg-sage-700 transition-colors"
                     >
-                      Klaim Promo <ArrowRight size={16} />
+                      Claim Promo <ArrowRight size={16} />
                     </a>
                   </div>
                 </div>
@@ -412,7 +403,7 @@ const Index = () => {
                           rel="noreferrer"
                           className="inline-flex items-center gap-1 font-body text-sm text-sage-600 hover:text-sage-800 transition-colors"
                         >
-                          Klaim Promo <ArrowRight size={14} />
+                          Claim Promo <ArrowRight size={14} />
                         </a>
                       </div>
                     </div>
@@ -429,10 +420,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <p className="inline-flex items-center justify-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-700/80">
-              <PackageIcon size={16} /> Paket Hemat
+              <PackageIcon size={16} /> Curated Experiences
             </p>
-            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Pilih Paket Favoritmu</h2>
-           
+            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Beauty Packages</h2>
+            <p className="font-body text-sm text-sage-600 mt-3">Choose from our signature packages designed for maximum rejuvenation.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -474,16 +465,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Gallery - Before & After */}
+      {/* Gallery / Before After */}
       <section className="py-20 px-6 bg-yuma-200 border-t border-b">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <p className="inline-flex items-center justify-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-600">
-              <ImageIcon size={20} /> Before & After
+              <Sparkles size={16} /> Real Results
             </p>
-            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Transformasi Kecantikan</h2>
+            <h2 className="font-display text-4xl font-bold mt-3 text-sage-600">Transformation Gallery</h2>
             <p className="font-body text-sage-700/80 mt-3 max-w-2xl mx-auto">
-              Lihat hasil nyata dari treatment kami. Geser slider untuk melihat perbandingan before & after
+              See the amazing transformations our clients have experienced. Slide to see the comparison.
             </p>
           </div>
 
@@ -527,7 +518,7 @@ const Index = () => {
                 onClick={() => setShowAllGallery(!showAllGallery)}
                 className="inline-flex items-center gap-2 border-2 border-sage-600 text-sage-600 px-6 py-3 rounded-lg font-body uppercase tracking-wider hover:bg-sage-600 hover:text-white transition-all duration-300"
               >
-                {showAllGallery ? "Lihat Lebih Sedikit" : "Lihat Lebih Banyak"} <ArrowRight size={18} />
+                {showAllGallery ? "View Less" : "View Full Gallery" } <ArrowRight size={18} />
               </button>
             </div>
           )}
@@ -567,8 +558,10 @@ const Index = () => {
       <section className="py-20 px-6 bg-yuma-200 border-t">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <p className="font-body text-xs tracking-[0.3em] uppercase text-sage-700">Testimoni</p>
-            <h2 className="font-display text-4xl font-bold mt-3 text-sage-700">Kata Mereka</h2>
+            <p className="inline-flex items-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-700">
+              <Sparkles size={16} /> Testimonials
+            </p>
+            <h2 className="font-display text-4xl font-bold mt-3 text-sage-700">What Our Clients Say</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -602,18 +595,19 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA Section */}
         <section className="py-24 text-sage-700 text-center bg-gradient-to-b from-yuma-200 to-sage-500">
           <div className="container mx-auto px-6 max-w-2xl">
-            <h3 className="font-display text-4xl font-semibold mb-6">Tertarik dengan layanan kami?</h3>
-            <p className="font-body text-xl opacity-80 mb-8 leading-relaxed text-sage-700">Silahkan hubungi kami melalui WhatsApp</p>
+            <p className="font-body text-xs tracking-[0.4em] uppercase text-sage-700 mb-6">Experience Elegance</p>
+            <h3 className="font-display text-4xl font-semibold mb-6">Ready to Reveal <br /> Your Best Self?</h3>
+            <p className="font-body text-xl opacity-80 mb-8 leading-relaxed text-sage-700">Join our community of satisfied clients and let us help you achieve the beauty you deserve.</p>
             <a
               href={waLink}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-sage-600 text-white px-7 py-3 rounded-lg font-body uppercase tracking-wider hover:bg-sage-800 transition-colors"
             >
-              Booking Now <ArrowRight size={18} />
+              Book Appointment <ArrowRight size={18} />
             </a>
           </div>
       </section>

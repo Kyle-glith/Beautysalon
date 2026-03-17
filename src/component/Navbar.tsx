@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 
 
 const navLinks = [
-    { to: "/", label: "Beranda" },
-    { to: "/layanan", label: "Layanan" },
-    { to: "/tentang", label: "Tentang Kami" },
-    { to: "/kontak", label: "Kontak" }
+    { to: "/", label: "Home" },
+    { to: "/layanan", label: "Services" },
+    { to: "/tentang", label: "About Us" },
+    { to: "/kontak", label: "Contact" }
 ];
 
 const Navbar = () => {

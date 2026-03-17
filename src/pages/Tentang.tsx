@@ -2,9 +2,9 @@ import Layout from "@/component/Layout";
 import { Award, Users, Calendar, Sparkles } from "lucide-react";
 
 const stats = [
-  { icon: Calendar, value: "11+", label: "Tahun Pengalaman" },
-  { icon: Users, value: "1000+", label: "Pelanggan Puas" },
-  { icon: Award, value: "10+", label: "Penghargaan" },
+  { icon: Calendar, value: "11+", label: "Years of Experience" },
+  { icon: Users, value: "1000+", label: "Happy Customers" },
+  { icon: Award, value: "10+", label: "Awards Won" },
 ];
 
 const Tentang = () => {
@@ -17,11 +17,11 @@ const Tentang = () => {
       <header className="pt-32 pb-16 px-6 bg-yuma-200 border-b">
         <div className="container mx-auto text-center">
           <p className="inline-flex items-center justify-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-600">
-            <Sparkles size={16} /> Kenali Kami Lebih Dekat
+            <Sparkles size={16} /> Get to Know Us
           </p>
-          <h1 className="font-display text-5xl font-bold mt-4 text-sage-600">Tentang Kami</h1>
+          <h1 className="font-display text-5xl font-bold mt-4 text-sage-600">About Us</h1>
           <p className="font-body text-sage-600 mt-5 max-w-2xl mx-auto">
-            Kami hadir untuk memberikan pengalaman kecantikan terbaik dengan sentuhan personal dan kehangatan.
+            We are here to provide the best beauty experience with a personal touch and warmth.
           </p>
         </div>
       </header>
@@ -34,17 +34,17 @@ const Tentang = () => {
               <img src={aboutImage} alt="Interior Aurélia Salon" className="w-full h-[500px] object-cover" />
             </div>
             <div>
-              <p className="font-body text-sm tracking-[0.3em] uppercase text-sage-600 mb-3">Cerita Kami</p>
-              <h2 className="font-display text-3xl font-semibold mb-6 text-sage-600">Keindahan Dimulai dari Sini</h2>
+              <p className="font-body text-sm tracking-[0.3em] uppercase text-sage-600 mb-3">Our Story</p>
+              <h2 className="font-display text-3xl font-semibold mb-6 text-sage-600">Beauty Starts Here</h2>
               <div className="space-y-4 font-body text-sm text-sage-600 leading-relaxed">
                 <p>
-                  BeautySalon didirikan pada tahun 2015 dengan visi sederhana: memberikan pengalaman perawatan kecantikan terbaik dengan sentuhan personal dan kehangatan.
+                  BeautySalon was founded in 2015 with a simple vision: to provide the best beauty treatment experience with a personal touch and warmth.
                 </p>
                 <p>
-                  Kami percaya bahwa setiap orang memiliki keindahan unik yang perlu dirawat dan ditonjolkan. Dengan tim profesional berpengalaman dan produk berkualitas tinggi, kami berkomitmen untuk membantu Anda tampil dan merasa yang terbaik.
+                  We believe that everyone has a unique beauty that needs to be nurtured and highlighted. With a team of experienced professionals and high-quality products, we are committed to helping you look and feel your best.
                 </p>
                 <p>
-                  Suasana salon kami dirancang untuk memberikan kenyamanan dan ketenangan, sehingga setiap kunjungan menjadi pengalaman yang menyenangkan dan memanjakan.
+                  Our salon atmosphere is designed to provide comfort and tranquility, making every visit a pleasant and pampering experience.
                 </p>
               </div>
             </div>
@@ -74,43 +74,36 @@ const Tentang = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <p className="inline-flex items-center justify-center gap-2 font-body text-xs tracking-[0.3em] uppercase text-sage-600 mb-3">
-              <Sparkles size={16} /> Nilai Kami
+              <Sparkles size={16} /> Our Values
             </p>
-            <h2 className="font-display text-4xl font-bold text-sage-600">Apa yang Kami Percaya</h2>
+            <h2 className="font-display text-4xl font-bold text-sage-600">What We Believe In</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
                 number: "01",
-                title: "Kualitas",
-                desc: "Produk dan teknik terbaik untuk hasil yang sempurna di setiap treatment yang kami berikan.",
+                title: "Quality",
+                desc: "The best products and techniques for perfect results in every treatment we provide.",
               },
               {
                 number: "02",
-                title: "Kenyamanan",
-                desc: "Suasana yang membuat Anda merasa rileks dan dimanjakan dari awal hingga akhir kunjungan.",
+                title: "Comfort",
+                desc: "An atmosphere that makes you feel relaxed and pampered from start to finish of your visit.",
               },
               {
                 number: "03",
-                title: "Kepercayaan",
-                desc: "Hubungan jangka panjang dengan setiap pelanggan kami berdasarkan kejujuran dan integritas.",
+                title: "Trust",
+                desc: "Long-term relationships with every customer based on honesty and integrity.",
               },
             ].map((v, i) => (
               <div
                 key={i}
-                className="relative p-8 rounded-2xl bg-white/70 border border-yuma-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
+                className="p-8 rounded-sm bg-white/50 border border-yuma-50 hover:shadow-lg transition-all"
               >
-                {/* Number */}
-                <span className="font-display text-6xl font-bold text-sage-400 group-hover:text-sage-600 transition-colors duration-300 select-none">
-                  {v.number}
-                </span>
-                {/* Divider */}
-                <div className="w-10 h-0.5 bg-sage-500 mt-4 mb-4 group-hover:w-16 transition-all duration-300" />
-                {/* Title */}
-                <h3 className="font-display text-xl font-bold text-sage-700 mb-3">{v.title}</h3>
-                {/* Desc */}
-                <p className="font-body text-sm text-sage-600 leading-relaxed">{v.desc}</p>
+                <div className="font-display text-5xl font-bold text-sage-600/10 mb-4">{v.number}</div>
+                <h3 className="font-display text-xl font-semibold text-sage-600 mb-3">{v.title}</h3>
+                <p className="font-body text-sm text-sage-600/80 leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
